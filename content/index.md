@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: CSP
+date: 2024-10-04
 ---
-
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+CSP (Commom Sense Psychology) Project aims to implement the theory proposed by by Andrew S. Gordon and Jerry R. Hobbs in the book ["A Formal Theory of Commonsense Psychology: How People Think People Think 1st Edition"](https://www.amazon.com/Formal-Theory-Commonsense-Psychology-People/dp/1107151007) using F-Logic (Frame Logic) instead of FOL (First Order Logic).
