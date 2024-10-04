@@ -2,7 +2,10 @@
 title: Infrastructure
 date: 2024-10-04
 ---
-Eventualities
+## Eventualities
+
+
+
 Sets
 Substitution
 Typical elements
