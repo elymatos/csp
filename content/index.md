@@ -3,6 +3,7 @@ title: Example Title
 draft: true
 tags:
   - example-tag
+date: 2024-10-04
 ---
 # Home
 
