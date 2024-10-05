@@ -1,0 +1,16 @@
+flora_symbol(ball,0,\@,64,8,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('Mary',0,\@,68,8,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('John',0,\@,60,8,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('Ze',0,\@,81,9,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('Maria',0,\@,89,9,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('Thing',0,\@,24,3,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol(b,0,\@,37,4,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol(event2,0,\@,73,9,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol(a,0,\@,32,4,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol(e,0,\@,28,4,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('Event',0,\@,26,4,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol(bolal,0,\@,85,9,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol(event1,0,\@,52,8,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol(c,0,\@,43,4,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('Give',0,\@,48,6,function_symbol,nontransactional_symbol,'eventuality.ergo').
+flora_symbol('Eventuality',0,\@,22,3,function_symbol,nontransactional_symbol,'eventuality.ergo').

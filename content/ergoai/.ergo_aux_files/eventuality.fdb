@@ -1,0 +1,20 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 16
+
+
+FLORA_THIS_WORKSPACE(sub)('Eventuality','Thing',__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)('Event',e,'Eventuality',__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)('Event',a,'Thing',__newcontextvar10).
+FLORA_THIS_WORKSPACE(mvd)('Event',b,'Thing',__newcontextvar11).
+FLORA_THIS_WORKSPACE(mvd)('Event',c,'Thing',__newcontextvar12).
+FLORA_THIS_WORKSPACE(sub)('Give','Eventuality',__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(event1,e,'Give',__newcontextvar11).
+FLORA_THIS_WORKSPACE(mvd)(event1,a,'John',__newcontextvar12).
+FLORA_THIS_WORKSPACE(mvd)(event1,b,ball,__newcontextvar13).
+FLORA_THIS_WORKSPACE(mvd)(event1,c,'Mary',__newcontextvar14).
+FLORA_THIS_WORKSPACE(isa)(event1,'Event',__newcontextvar15).
+FLORA_THIS_WORKSPACE(mvd)(event2,e,'Give',__newcontextvar11).
+FLORA_THIS_WORKSPACE(mvd)(event2,a,'Ze',__newcontextvar12).
+FLORA_THIS_WORKSPACE(mvd)(event2,b,bolal,__newcontextvar13).
+FLORA_THIS_WORKSPACE(mvd)(event2,c,'Maria',__newcontextvar14).
+FLORA_THIS_WORKSPACE(isa)(event2,'Event',__newcontextvar15).

@@ -1,0 +1,9 @@
+:- compiler_options{omni=on}.
+
+// equal
+forall(?_x)^(equal(?_x,?_x)).
+forall(?_x,?_y)^(equal(?_x,?_y) <== equal(?_y,?_x)).
+forall(?_x,?_y,?_z)^(equal(?_x,?_z) <== equal(?_x,?_y) \and equal(?_y,?_z)).
+
+equal(ab,ba).
+equal(ba,azul).
