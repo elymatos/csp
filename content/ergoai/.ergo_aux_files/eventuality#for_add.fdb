@@ -1,0 +1,9 @@
+#include "flrheader.flh"
+#define FLORA_COMPILATION_ID 12
+
+
+FLORA_THIS_WORKSPACE(sub)('Eventuality','Thing',__newcontextvar4).
+FLORA_THIS_WORKSPACE(meth)('Give',a,__newcontextvar8).
+FLORA_THIS_WORKSPACE(meth)('Give',b,__newcontextvar9).
+FLORA_THIS_WORKSPACE(meth)('Give',c,__newcontextvar10).
+FLORA_THIS_WORKSPACE(tblflapply)('Rexist','Giv',__newcontextvar4).

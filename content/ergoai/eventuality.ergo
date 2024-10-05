@@ -1,0 +1,9 @@
+:- compiler_options{omni=on}.
+
+Eventuality::Thing.
+Event[e->Eventuality,a->Thing, b-> Thing, c->Thing].
+
+Give::Eventuality.
+
+event1[e->Give,a->John,b->ball,c->Mary]:Event.
+event2[e->Give,a->Ze,b->bolal,c->Maria]:Event.
