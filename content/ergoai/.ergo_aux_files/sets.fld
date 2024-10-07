@@ -1,6 +1,17 @@
 #include "flrheader.flh"
 #include "flr_fld_standardtypes.flh"
 
-#define FLORA_COMPILATION_ID 21
+#define FLORA_COMPILATION_ID 32
 
+FLORA_THIS_WORKSPACE(mvddef)(__fldnewvar1,members,__fldnewvar2).
+FLORA_THIS_WORKSPACE(imeth)(__fldnewvar1,isNull,__fldnewvar2).
+FLORA_THIS_WORKSPACE(imvd)(__fldnewvar1,count,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(imvddef)(__fldnewvar1,members,__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,'Thing',__fldnewvar2).
+FLORA_THIS_WORKSPACE(sub)(__fldnewvar1,'Set',__fldnewvar2).
+FLORA_THIS_WORKSPACE(meth)(__fldnewvar1,isNull,__fldnewvar2).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,members,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,self,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(mvd)(__fldnewvar1,count,__fldnewvar2,__fldnewvar3).
+FLORA_THIS_WORKSPACE(tblflapply)(nequal,__fldnewvar1,__fldnewvar2,__fldnewvar3).
 FLORA_THIS_WORKSPACE(tblflapply)(equal,__fldnewvar1,__fldnewvar2,__fldnewvar3).
