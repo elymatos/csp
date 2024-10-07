@@ -351,3 +351,15 @@
 '_$_$_ergo''tag_descriptor'(6,'sets.ergo','main',6,'_$_$_ergo''descr_vars').
 '_$_$_ergo''rule_enabled'(6,'sets.ergo','main').
 '_$_$_ergo''bool_descriptor'(6,'sets.ergo','main',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(8,'sets.ergo','main',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(8,'sets.ergo','main',8,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(8,'sets.ergo','main').
+'_$_$_ergo''bool_descriptor'(8,'sets.ergo','main',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(10,'sets.ergo','main',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(10,'sets.ergo','main',10,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(10,'sets.ergo','main').
+'_$_$_ergo''bool_descriptor'(10,'sets.ergo','main',strict,'_$_$_ergo''descr_vars').
+'_$_$_ergo''prop_descriptor'(12,'sets.ergo','main',type,rule,'_$_$_ergo''descr_vars').
+'_$_$_ergo''tag_descriptor'(12,'sets.ergo','main',12,'_$_$_ergo''descr_vars').
+'_$_$_ergo''rule_enabled'(12,'sets.ergo','main').
+'_$_$_ergo''bool_descriptor'(12,'sets.ergo','main',strict,'_$_$_ergo''descr_vars').

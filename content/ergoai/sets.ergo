@@ -1,9 +1,29 @@
 :- compiler_options{omni=on}.
 
+?_X[self->?_X].				// define self
+
 // equal
 forall(?_x)^(equal(?_x,?_x)).
 forall(?_x,?_y)^(equal(?_x,?_y) <== equal(?_y,?_x)).
 forall(?_x,?_y,?_z)^(equal(?_x,?_z) <== equal(?_x,?_y) \and equal(?_y,?_z)).
 
-equal(ab,ba).
-equal(ba,azul).
+// nequal
+forall(?_x,?_y)^(nequal(?_x,?_y) <== \neg equal(?_x,?_y)).
+
+// set
+Set::Thing.
+Set[|
+    members->{},
+     count->0,
+     isNull
+|].
+?X[count->?C]  :-  ?C = count{?m| ?X:Set[members->?m]}.
+
+//forall(?_set)^(setIsNull(?_set)<== Set(?_set)  \and forall(?_x)^(\neg ?_set[members->?_x])).
+?set[isNull]  :-  ?set:Set[count ->?X] \and (?X == 0) .
+
+
+set1:Set[members->{Ely,Ligia}].
+set1[members->{Paulo}].
+set2:Set[members->{A,B,C}].
+set3:Set[members->{}].

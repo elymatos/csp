@@ -343,6 +343,19 @@
 
 
 
+'_$_$_ergo''mod''main''mvd'(___X,self,___X,__newcontextvar3).
 '_$_$_ergo''mod''main''tblflapply'(equal,___newomnivar1,___newomnivar1,__newcontextvar3).
-'_$_$_ergo''mod''main''tblflapply'(equal,ab,ba,__newcontextvar3).
-'_$_$_ergo''mod''main''tblflapply'(equal,ba,azul,__newcontextvar3).
+'_$_$_ergo''mod''main''sub'('Set','Thing',__newcontextvar3).
+'_$_$_ergo''mod''main''imvddef'('Set',members,__newcontextvar7).
+'_$_$_ergo''mod''main''imvd'('Set',count,0,__newcontextvar8).
+'_$_$_ergo''mod''main''imeth'('Set',isNull,__newcontextvar9).
+'_$_$_ergo''mod''main''mvd'(set1,members,'Ely',__newcontextvar7).
+'_$_$_ergo''mod''main''mvd'(set1,members,'Ligia',__newcontextvar8).
+'_$_$_ergo''mod''main''isa'(set1,'Set',__newcontextvar9).
+'_$_$_ergo''mod''main''mvd'(set1,members,'Paulo',__newcontextvar3).
+'_$_$_ergo''mod''main''mvd'(set2,members,'A',__newcontextvar9).
+'_$_$_ergo''mod''main''mvd'(set2,members,'B',__newcontextvar10).
+'_$_$_ergo''mod''main''mvd'(set2,members,'C',__newcontextvar11).
+'_$_$_ergo''mod''main''isa'(set2,'Set',__newcontextvar12).
+'_$_$_ergo''mod''main''mvddef'(set3,members,__newcontextvar5).
+'_$_$_ergo''mod''main''isa'(set3,'Set',__newcontextvar6).

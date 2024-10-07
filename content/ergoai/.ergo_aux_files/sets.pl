@@ -42,7 +42,7 @@
 
 /***********************************************************************/
 
-#define FLORA_COMPILATION_ID 21
+#define FLORA_COMPILATION_ID 32
 
 /************************************************************************
   file: headerinc/flrheader2_inc.flh
@@ -242,6 +242,27 @@
 /***********************************************************************/
 
 /************************************************************************
+  file: syslibinc/flraggcount_inc.flh
+
+  Author(s): Guizhen Yang
+
+  This file is automatically included by the FLORA-2 compiler.
+************************************************************************/
+
+:-(compiler_options([xpp_on])).
+
+#mode standard Prolog
+
+#if !defined(FLORA_TERMS_FLH)
+#define FLORA_TERMS_FLH
+#include "flora_terms.flh"
+#endif
+
+?-(:(flrlibman,flora_load_library(FLLIBCOUNT))).
+
+/***********************************************************************/
+
+/************************************************************************
   file: syslibinc/flrclause_inc.flh
 
   Author(s): Chang Zhao
@@ -339,15 +360,23 @@
 :-(FLORA_THIS_WORKSPACE(static^neg^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar13,__newcontextvar14)),','('_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,__newcontextvar1)),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar3))))).
 :-(FLORA_THIS_WORKSPACE(static^neg^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(_CallerModuleVar,__newcontextvar15,__newcontextvar16)),','('_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar6,__newcontextvar5)),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar8,__newcontextvar7))))).
 :-(FLORA_THIS_WORKSPACE(static^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(_CallerModuleVar,__newcontextvar17,__newcontextvar18)),','('_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar10,__newcontextvar9)),FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar12,__newcontextvar11))))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar5,__newcontextvar6)),','('_$_$_ergo''rule_enabled'(8,'sets.ergo',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(nequal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,__newcontextvar1)))).
+:-(FLORA_THIS_WORKSPACE(static^tblflapply)(nequal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar7,__newcontextvar8)),','('_$_$_ergo''rule_enabled'(8,'sets.ergo',FLORA_THIS_MODULE_NAME),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar3)))).
+:-(FLORA_THIS_WORKSPACE(static^mvd)(__X,count,__C,'_$ctxt'(_CallerModuleVar,10,__newcontextvar1)),','('_$_$_ergo''rule_enabled'(10,'sets.ergo',FLORA_THIS_MODULE_NAME),','(fllibcount(__newdontcarevar4,[],[],','(','(FLORA_THIS_WORKSPACE(d^mvd)(__X,members,__newdontcarevar4,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,10)),FLORA_THIS_WORKSPACE(d^isa)(__X,'Set','_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,10))),fllibexecute_delayed_calls([__X,__newdontcarevar4],[])),__newvar5),=(__C,__newvar5)))).
+:-(FLORA_THIS_WORKSPACE(static^meth)(__set,isNull,'_$ctxt'(_CallerModuleVar,12,__newcontextvar1)),','('_$_$_ergo''rule_enabled'(12,'sets.ergo',FLORA_THIS_MODULE_NAME),','(','(','(FLORA_THIS_WORKSPACE(d^mvd)(__set,count,__X,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,12)),FLORA_THIS_WORKSPACE(d^isa)(__set,'Set','_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,12))),==(__X,0)),fllibexecute_delayed_calls([__X,__set],[__set])))).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Rule signatures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-?-(fllibinsrulesig(4,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,5,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar2,___newomnivar1,'_$ctxt'(_CallerModuleVar,__newcontextvar5,__newcontextvar6)),null,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,__newcontextvar1)),'_$_$_ergo''rule_enabled'(4,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
-?-(fllibinsrulesig(4,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,5,FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar7,__newcontextvar8)),null,FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar1,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar3)),'_$_$_ergo''rule_enabled'(4,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
-?-(fllibinsrulesig(6,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,6,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar13,__newcontextvar14)),null,','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,__newcontextvar1)),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar3))),'_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
-?-(fllibinsrulesig(6,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,6,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(_CallerModuleVar,__newcontextvar15,__newcontextvar16)),null,','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar6,__newcontextvar5)),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar8,__newcontextvar7))),'_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
-?-(fllibinsrulesig(6,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,6,FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(_CallerModuleVar,__newcontextvar17,__newcontextvar18)),null,','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar10,__newcontextvar9)),FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar12,__newcontextvar11))),'_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(4,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,6,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar2,___newomnivar1,'_$ctxt'(_CallerModuleVar,__newcontextvar5,__newcontextvar6)),null,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,__newcontextvar1)),'_$_$_ergo''rule_enabled'(4,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(4,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,6,FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar7,__newcontextvar8)),null,FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar1,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar3)),'_$_$_ergo''rule_enabled'(4,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(6,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,7,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar13,__newcontextvar14)),null,','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,__newcontextvar1)),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar3))),'_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(6,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,7,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(_CallerModuleVar,__newcontextvar15,__newcontextvar16)),null,','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar6,__newcontextvar5)),FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar8,__newcontextvar7))),'_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(6,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,7,FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar3,'_$ctxt'(_CallerModuleVar,__newcontextvar17,__newcontextvar18)),null,','(FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar10,__newcontextvar9)),FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar2,___newomnivar3,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar12,__newcontextvar11))),'_$_$_ergo''rule_enabled'(6,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(8,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,8,FLORA_THIS_WORKSPACE(d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar5,__newcontextvar6)),null,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(nequal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,__newcontextvar1)),'_$_$_ergo''rule_enabled'(8,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(8,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,8,FLORA_THIS_WORKSPACE(d^tblflapply)(nequal,___newomnivar1,___newomnivar2,'_$ctxt'(_CallerModuleVar,__newcontextvar7,__newcontextvar8)),null,FLORA_THIS_WORKSPACE(neg^d^tblflapply)(equal,___newomnivar1,___newomnivar2,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar4,__newcontextvar3)),'_$_$_ergo''rule_enabled'(8,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(10,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,11,FLORA_THIS_WORKSPACE(d^mvd)(__X,count,__C,'_$ctxt'(_CallerModuleVar,10,__newcontextvar1)),','(fllibcount(__newdontcarevar4,[],[],','(','(FLORA_THIS_WORKSPACE(d^mvd)(__X,members,__newdontcarevar4,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,10)),FLORA_THIS_WORKSPACE(d^isa)(__X,'Set','_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,10))),fllibexecute_delayed_calls([__X,__newdontcarevar4],[])),__newvar5),=(__C,__newvar5)),null,'_$_$_ergo''rule_enabled'(10,'sets.ergo',FLORA_THIS_MODULE_NAME),null,true)).
+?-(fllibinsrulesig(12,'sets.ergo','_$_$_ergo''descr_vars',FLORA_THIS_MODULE_NAME,12,FLORA_THIS_WORKSPACE(d^meth)(__set,isNull,'_$ctxt'(_CallerModuleVar,12,__newcontextvar1)),','(','(FLORA_THIS_WORKSPACE(d^mvd)(__set,count,__X,'_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar3,12)),FLORA_THIS_WORKSPACE(d^isa)(__set,'Set','_$ctxt'(FLORA_THIS_MODULE_NAME,__newcontextvar2,12))),==(__X,0)),null,'_$_$_ergo''rule_enabled'(12,'sets.ergo',FLORA_THIS_MODULE_NAME),fllibexecute_delayed_calls([__X,__set],[__set]),true)).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Signatures for latent queries %%%%%%%%%%%%%%%%%%%%%%%%

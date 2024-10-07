@@ -1,7 +1,20 @@
 #include "flrheader.flh"
-#define FLORA_COMPILATION_ID 21
+#define FLORA_COMPILATION_ID 32
 
 
+FLORA_THIS_WORKSPACE(mvd)(___X,self,___X,__newcontextvar3).
 FLORA_THIS_WORKSPACE(tblflapply)(equal,___newomnivar1,___newomnivar1,__newcontextvar3).
-FLORA_THIS_WORKSPACE(tblflapply)(equal,ab,ba,__newcontextvar3).
-FLORA_THIS_WORKSPACE(tblflapply)(equal,ba,azul,__newcontextvar3).
+FLORA_THIS_WORKSPACE(sub)('Set','Thing',__newcontextvar3).
+FLORA_THIS_WORKSPACE(imvddef)('Set',members,__newcontextvar7).
+FLORA_THIS_WORKSPACE(imvd)('Set',count,0,__newcontextvar8).
+FLORA_THIS_WORKSPACE(imeth)('Set',isNull,__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(set1,members,'Ely',__newcontextvar7).
+FLORA_THIS_WORKSPACE(mvd)(set1,members,'Ligia',__newcontextvar8).
+FLORA_THIS_WORKSPACE(isa)(set1,'Set',__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(set1,members,'Paulo',__newcontextvar3).
+FLORA_THIS_WORKSPACE(mvd)(set2,members,'A',__newcontextvar9).
+FLORA_THIS_WORKSPACE(mvd)(set2,members,'B',__newcontextvar10).
+FLORA_THIS_WORKSPACE(mvd)(set2,members,'C',__newcontextvar11).
+FLORA_THIS_WORKSPACE(isa)(set2,'Set',__newcontextvar12).
+FLORA_THIS_WORKSPACE(mvddef)(set3,members,__newcontextvar5).
+FLORA_THIS_WORKSPACE(isa)(set3,'Set',__newcontextvar6).

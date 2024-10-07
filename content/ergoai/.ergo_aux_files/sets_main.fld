@@ -491,4 +491,15 @@
 
 
 
+'_$_$_ergo''mod''main''mvddef'(__fldnewvar1,members,__fldnewvar2).
+'_$_$_ergo''mod''main''imeth'(__fldnewvar1,isNull,__fldnewvar2).
+'_$_$_ergo''mod''main''imvd'(__fldnewvar1,count,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''main''imvddef'(__fldnewvar1,members,__fldnewvar2).
+'_$_$_ergo''mod''main''sub'(__fldnewvar1,'Thing',__fldnewvar2).
+'_$_$_ergo''mod''main''sub'(__fldnewvar1,'Set',__fldnewvar2).
+'_$_$_ergo''mod''main''meth'(__fldnewvar1,isNull,__fldnewvar2).
+'_$_$_ergo''mod''main''mvd'(__fldnewvar1,members,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''main''mvd'(__fldnewvar1,self,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''main''mvd'(__fldnewvar1,count,__fldnewvar2,__fldnewvar3).
+'_$_$_ergo''mod''main''tblflapply'(nequal,__fldnewvar1,__fldnewvar2,__fldnewvar3).
 '_$_$_ergo''mod''main''tblflapply'(equal,__fldnewvar1,__fldnewvar2,__fldnewvar3).
